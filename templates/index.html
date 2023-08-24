@@ -1,0 +1,22 @@
+{% extends "layout.html" %} {% block body %}
+<div class="home">
+    <div class="kms">
+        <div class="h1">We are here to help you!</div>
+        <div class="h2">Get free education and support</div>
+        <div class="relbutdiv">
+            <div class="relbutcont ">
+                <form method="post" action="/gotologin">
+                    <button class="button-23 " role="button" type="submit" id="relbut">Log in</button>
+                </form>
+            </div>
+            <div class="relbutcont">
+                <form method="post" action="/gotosignup">
+                    <button class="button-23 " role="button" type="submit" id="relbut">Sign up</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div>
+        <img src="static/study0.jpg" alt="study" class="homephoto">
+    </div>
+    {% endblock %}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <link href="static/styles.css" rel="stylesheet">
+    <meta name="viewport" content="initial-scale=1, width=device-width">
+    <script>
+        function myFunction() {
+            var x = document.getElementById("password");
+            var y = document.getElementById("confirmation");
+            if (x.type === "password") {
+                x.type = "text";
+            } else {
+                x.type = "password";
+            }
+            if (y.type === "password") {
+                y.type = "text";
+            } else {
+                y.type = "password";
+            }
+        }
+
+        function coursebar() {
+            var x = document.getElementById("coursebar");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
+    <title>ApricusEdu</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="rightnav">
+            <div class="inline0">
+                <img src="/static/ApricusEdu.jpeg" alt="" class="headimage">
+            </div>
+            <div class="inline0" id="right">
+                <div class="inline ">
+                    <form method="post" action="/gotologin">
+                        <button class="button-23 " role="button" type="submit">Log in</button>
+                    </form>
+                </div>
+                <div class="inline">
+                    <form method="post" action="/gotosignup">
+                        <button class="button-23 " role="button" type="submit">Sign up</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+        <div class="leftnav">
+            <div class="inlinenew">
+                <form method="post" action="/gohome">
+                    <button class="button-48" role="button" type="submit" class="text "><span>Home</span></button>
+                </form>
+            </div>
+            <div class="inlinenew">
+                <form method="post" action="/staff">
+                    <button class="button-48 " role="button " type="submit " class="text "><span>Team</span></button>
+                </form>
+            </div>
+            <div class="inlinenew">
+                <button onclick="coursebar()" class="button-48 " role="button " type="submit "><span class="text ">Courses</span></button>
+                <div id="coursebar" class="coursebar">
+                    <div>
+                        <form method="post" action="/courses">
+                            <button class="button-4" role="button">MathForEveryone</button>
+                        </form>
+                    </div>
+                    <div>
+                        <button class="button-4" role="button">In progress...</button>
+                    </div>
+                </div>
+            </div>
+            <div class="inlinenew">
+                <form method="post" action="/feedbacks">
+                    <button class="button-48 " role="button " type="submit "><span class="text ">Feedbacks</span></button>
+                </form>
+            </div>
+            <div class="inlinenew">
+                <form method="post" action="/faq">
+                    <button class="button-48 " role="button " type="submit "><span class="text ">Faq</span></button>
+                </form>
+            </div>
+        </div>
+    </div>
+    {% block body %}{% endblock %}
+    <div class="footer">
+        <div class="footer1">
+            <div class="copy">@ApricusEdu 2023</div>
+        </div>
+        <div class="footer1">
+            <div class="connect">
+                <div class="connect1"> Connect with us</div>
+                <div> <a style="color: white; background-color: transparent; text-decoration: none;" href="https://www.instagram.com/javadism_/">instagram</a></div>
+            </div>
+        </div>
+        <div class="footer1">
+            <div class="contact">
+                <div class="contact1">Contact us</div>
+                <div> <a style="color: white; background-color: transparent; text-decoration: none;" href="mailto:example@example.com">example@example.com</a></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <link href="static/styles.css" rel="stylesheet">
+    <meta name="viewport" content="initial-scale=1, width=device-width">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css/" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script>
+        function myFunction() {
+            var x = document.getElementById("password");
+            var y = document.getElementById("confirmation");
+            if (x.type === "password") {
+                x.type = "text";
+            } else {
+                x.type = "password";
+            }
+            if (y.type === "password") {
+                y.type = "text";
+            } else {
+                y.type = "password";
+            }
+        }
+
+        function coursebar() {
+            var x = document.getElementById("coursebar");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
+    <title>ApricusEdu</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="rightnav">
+            <div class="inline0">
+                <img src="/static/ApricusEdu.jpeg" alt="" class="headimage">
+            </div>
+            <div class="inline0" id="right">
+                <div class="inline ">
+                    <form method="post" action="/gotologin">
+                        <button class="button-23 " role="button" type="submit">Log in</button>
+                    </form>
+                </div>
+                <div class="inline">
+                    <form method="post" action="/gotosignup">
+                        <button class="button-23 " role="button" type="submit">Sign up</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+        <div class="leftnav">
+            <div class="inlinenew">
+                <form method="post" action="/gohome">
+                    <button class="button-48" role="button" type="submit" class="text "><span>Home</span></button>
+                </form>
+            </div>
+            <div class="inlinenew">
+                <form method="post" action="/staff">
+                    <button class="button-48 " role="button " type="submit " class="text "><span>Team</span></button>
+                </form>
+            </div>
+            <div class="inlinenew">
+                <button onclick="coursebar()" class="button-48 " role="button " type="submit "><span class="text ">Courses</span></button>
+                <div id="coursebar" class="coursebar">
+                    <div>
+                        <form method="post" action="/courses">
+                            <button class="button-4" role="button">MathForEveryone</button>
+                        </form>
+                    </div>
+                    <div>
+                        <button class="button-4" role="button">In progress...</button>
+                    </div>
+                </div>
+            </div>
+            <div class="inlinenew">
+                <form method="post" action="/feedbacks">
+                    <button class="button-48 " role="button " type="submit "><span class="text ">Feedbacks</span></button>
+                </form>
+            </div>
+            <div class="inlinenew">
+                <form method="post" action="/faq">
+                    <button class="button-48 " role="button " type="submit "><span class="text ">Faq</span></button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <div class="AAAAAA">
+        <div class="feedback">
+            <div class="qutu" class="nei">
+
+                <div class="feedbacktitle">
+                    Feedbacks
+                </div>
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="" id="miniqutu">
+                                <div y2 class="feedbacktext" id="feedbacktext" alt="First slide">
+                                    <p>
+                                        I was struggling on math homeworks, and couldn't find someone to help me. However, with the help of the this website, I was able to understand the topics I was struggling with, and increased my performance in the class a lot. I am gratefull for this website
+                                        and want to thank the team who was working on it.
+                                    </p>
+                                </div>
+                                <div class="feedbackref" id="feedbackref">
+                                    @ Someone Someone
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="" id="miniqutu">
+                                <div class="feedbacktext" id="feedbacktext" alt="Second slide">
+                                    <p>
+                                        Its awasome website! I was concerned with my grades on mathematics. But though MathForEveryone course, I was able to work on my weak sides and increase my performance in mathematics. I especially enjoyed the cambinatorics parts in 9th grade videos. Hopefully,
+                                        I will get high score on national 9th grade exam as well! Thank you, ApricusEdu team!
+                                    </p>
+                                </div>
+                                <div class="feedbackref" id="feedbackref">
+                                    @ 2nd person
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="" id="miniqutu">
+                                <div class="feedbacktext" id="feedbacktext" alt="Third slide">
+                                    <p>
+                                        I wanted to learn more about mathematics than what school currucilum offers. However, my family's condition didn't allow us to find tutor or extra course for me. But, as this course was free, and self-paced, I had no stugles learning from there. I would
+                                        like to see course about biology as well. Hoepfully, ApricusEdu team will upload it soon as well. Looking forward to it!
+                                    </p>
+                                </div>
+                                <div class="feedbackref" id="feedbackref">
+                                    @ Third person
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <img class="carousel-control-prev-icon" src="https://icons.iconarchive.com/icons/icons8/ios7/128/Arrows-Back-icon.png" width="24" height="24">
+                        <span class="sr-only" style="color: black;">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <img class="carousel-control-next-icon" aria-hidden="true" src="https://icons.iconarchive.com/icons/icons8/ios7/128/Arrows-Forward-icon.png" width="24" height="24"></img>
+                        <span class="sr-only" style="
+                            color: black;
+                        ">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer1">
+            <div class="copy">@ApricusEdu 2023</div>
+        </div>
+        <div class="footer1">
+            <div class="connect">
+                <div class="connect1"> Connect with us</div>
+                <div> <a style="color: white; background-color: transparent; text-decoration: none;" href="https://www.instagram.com/javadism_/">instagram</a></div>
+            </div>
+        </div>
+        <div class="footer1">
+            <div class="contact">
+                <div class="contact1">Contact us</div>
+                <div> <a style="color: white; background-color: transparent; text-decoration: none;" href="mailto:example@example.com">example@example.com</a></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

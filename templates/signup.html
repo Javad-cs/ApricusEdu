@@ -1,0 +1,36 @@
+{% extends "layout.html" %} {% block body %}
+<form action="/register" method="post" class="sign_up">
+    <div class="mb">
+        <input class="search" autocomplete="off" autofocus value="{{ name }}" name="name" placeholder="Name" type="text">
+    </div>
+    <div class="error">
+        {{ message1 }}
+    </div>
+    <div class="mb" s>
+        <input class="search" autocomplete="off" autofocus name="surname" value="{{ surname }}" placeholder="Surname" type="text">
+    </div>
+    <div class="error">
+        {{ message2 }}
+    </div>
+    <div class="mb">
+        <input class="search" autocomplete="off" autofocus id="username" value="{{ username }}" name="username" placeholder="Username" type="text">
+    </div>
+    <div class="error">
+        {{ message3 }}
+    </div>
+    <div class="mb">
+        <input class="search" autofocus id="password" minlength="8" name="password" placeholder="Password" type="password">
+        <input type="checkbox" onclick="myFunction()">
+    </div>
+    <div class="error">
+        {{ message4 }}
+    </div>
+    <div class="mb">
+        <input class="search" autofocus id="confirmation" name="confirmation" placeholder="Confirm password" type="password">
+    </div>
+    <div class="error">
+        {{ message5 }}
+    </div>
+    <button class="button-7" role="button" type="submit">Sign up</button>
+</form>
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends "layout.html" %} {% block body %}
+<form action="/login" method="post" class="log_in">
+    <div class="mb">
+        <input class="search" autocomplete="off" autofocus id="username" value="{{ username }}" name="username" placeholder="Username" type="text">
+    </div>
+    <div class="error">
+        {{ message1 }}
+    </div>
+    <div class="mb">
+        <input class="search" autofocus id="password" name="password" placeholder="Password" type="password">
+        <input type="checkbox" onclick="myFunction()">
+    </div>
+    <div class="error">
+        {{ message2 }}
+    </div>
+    <button class="button-7" role="button" type="submit">Log in</button>
+</form>
+{% endblock %}
