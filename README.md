@@ -6,19 +6,19 @@
 
 ---
 
-## ✨ Features
+##  Features
 
-- ✅ Explore homepage, team, FAQ, and feedback without registration
-- 🎥 Sample educational videos for each grade and subject
-- 🔐 Signup/login with form validation and error messages
-- 📺 Smooth page transitions using Flask routing and JavaScript
-- 💬 Auto-rotating and manually controllable feedback section
-- 📊 SQL database for registered users
-- 🌍 Azerbaijani-language math content (grades 6–11)
+-  Explore homepage, team, FAQ, and feedback without registration
+-  Sample educational videos for each grade and subject
+-  Signup/login with form validation and error messages
+-  Smooth page transitions using Flask routing and JavaScript
+-  Auto-rotating and manually controllable feedback section
+-  SQL database for registered users
+-  Azerbaijani-language math content (grades 6–11)
 
 ---
 
-## 📸 How It Works
+##  How It Works
 
 - Users land on a homepage with our mission in two lines.
 - They can explore public pages: **Courses**, **Team**, **FAQ**, and **Feedbacks**.
@@ -30,7 +30,7 @@
 
 ---
 
-## 🛠 Tech Stack
+##  Tech Stack
 
 - **Frontend:** HTML, CSS, JavaScript, Bootstrap
 - **Backend:** Flask (Python)
@@ -39,7 +39,7 @@
 
 ---
 
-## 🗂️ Project Structure
+##  Project Structure
 
 ```
 ApricusEdu/
@@ -69,7 +69,7 @@ ApricusEdu/
 │   └── logfaq.html
 └── flask_session/
 ```
-## 🧪 Getting Started
+##  Getting Started
 
 ```bash
 # 1. Clone the repo
